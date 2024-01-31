@@ -1,3 +1,7 @@
+//////////////////////
+///t.me/@botpribacy///
+//////////////////////
+
 import { getOrCreateAssociatedTokenAccount, createTransferInstruction } from "@solana/spl-token";
 import { Connection, Keypair, ParsedAccountData, PublicKey, sendAndConfirmTransaction, Transaction } from "@solana/web3.js";
 import { Keypair } from "@solana/web3.js";
