@@ -1,5 +1,5 @@
 //////////////////////
-///t.me/@botpribacy///
+///t.me/@botprivacy///
 //////////////////////
 
 import { getOrCreateAssociatedTokenAccount, createTransferInstruction } from "@solana/spl-token";
