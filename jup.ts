@@ -11,8 +11,8 @@ console.log(`My public key is: ${FROM_KEYPAIR.publicKey.toString()}.`);
 const QUICKNODE_RPC = 'https://example.solana-devnet.quiknode.pro/0123456/';
 const SOLANA_CONNECTION = new Connection(QUICKNODE_RPC);
 const DESTINATION_WALLET = 'RECIVED ADDRESS'; 
-const MINT_ADDRESS = 'JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'; //You must change this value!
-const TRANSFER_AMOUNT = 200;
+const MINT_ADDRESS = 'JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'; 
+const TRANSFER_AMOUNT = 200; //You must change this value!
 async function getNumberDecimals(mintAddress: string):Promise<number> {
     const info = await SOLANA_CONNECTION.getParsedAccountInfo(new PublicKey(MINT_ADDRESS));
     const result = (info.value?.data as ParsedAccountData).parsed.info.decimals as number;
